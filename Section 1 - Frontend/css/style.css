@@ -22,7 +22,6 @@ body {
 }
 .navbar ul li {
   margin: 0 1rem;
-
 }
 .navbar ul li a {
   position: relative;
@@ -39,10 +38,10 @@ body {
   bottom: -10px;
   transition: 0.3s;
 }
-.navbar ul li a:hover{
+.navbar ul li a:hover {
   color: black;
 }
-.navbar ul li a:hover::after{
+.navbar ul li a:hover::after {
   width: 100%;
 }
 
