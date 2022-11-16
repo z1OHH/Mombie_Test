@@ -1,0 +1,52 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #ccc;
+    font-family: Arial;
+}
+.navbar{
+    height: 120px;
+    display: flex; 
+    background-color: rgb(255, 255, 255);
+    justify-content: space-around;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+ul li{
+    margin: 0 1rem;
+}
+ul li a{
+    color: rgb(149, 149, 149);
+    text-decoration: none;
+}
+.banner-area{
+    background-color: black;
+    height: 550px;
+    width: 100%;
+    position: fixed;
+}
+.banner-area::before{
+    content: '';
+    position: absolute;
+    height: 550px;
+    width: 100%;
+    position: fixed;
+    background-image: url(../img/hero_banner.jpg);
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.5;
+}
+h1{
+    position: relative;
+    color: #fff;
+}
