@@ -52,6 +52,38 @@ body {
   height: 600px;
   width: 100%;
 }
+.banner-area p{
+  margin: 160px;
+  font-size: 52px;
+  position: relative;
+  color: #fff;
+	transform: translateX(-10%);
+	opacity: 0;
+	animation: slide-in-anim 1s ease-out forwards;
+}
+
+.banner-area span{
+  color: #ffffff;
+  animation: span-color-changing 1.2s ease-out forwards;
+}
+
+@keyframes slide-in-anim {
+  60% {
+		opacity: 0.6;
+		transform: translateX(1%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}
+
+@keyframes span-color-changing  {
+	100% {
+		color: #ffc200;
+	}
+}
+
 .banner-area::before {
   content: "";
   position: absolute;
@@ -118,13 +150,6 @@ body {
 }
 .gallery p {
   font-size: 30px;
-  color: #fff;
-}
-
-h1 {
-  margin: 160px;
-  font-size: 52px;
-  position: relative;
   color: #fff;
 }
 h2 {
